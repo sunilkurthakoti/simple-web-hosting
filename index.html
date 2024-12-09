@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>One Piece Fan Page</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a, #333);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(17, 17, 17, 0.9);
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+            backdrop-filter: blur(10px);
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f90;
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #f90;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        nav a:hover::before {
+            transform: scaleX(1);
+        }
+
+        /* Intro Section */
+        .intro {
+            padding: 150px 20px 50px;
+            text-align: center;
+            background: url('onepiece-banner.jpg') center/cover no-repeat;
+            color: #fff;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .intro h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .intro p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+
+        /* Anime Cards */
+        .anime-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .anime-card {
+            width: 300px;
+            margin: 20px;
+            display: inline-block;
+            background: linear-gradient(135deg, #444, #222);
+            border: 1px solid #666;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.5s, box-shadow 0.5s;
+            cursor: pointer;
+        }
+
+        .anime-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .anime-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .anime-info {
+            padding: 15px;
+            background: #222;
+        }
+
+        .anime-title {
+            font-size: 22px;
+            color: #f90;
+        }
+
+        .anime-description {
+            font-size: 14px;
+            color: #ddd;
+        }
+
+        /* Character Details */
+        .details-section {
+            padding: 50px 20px;
+            background: #111;
+            text-align: center;
+        }
+
+        .details-section h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #f90;
+        }
+
+        .detail-card {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #555, #333);
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        .detail-card p {
+            font-size: 16px;
+        }
+
+        .detail-card strong {
+            color: #f90;
+        }
+
+        /* Footer */
+        footer {
+            background: #111;
+            padding: 20px;
+            text-align: center;
+            color: #888;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Anime List</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Intro Section -->
+    <section class="intro">
+        <h1>Welcome to the World of One Piece!</h1>
+        <p>Set sail on an epic adventure with the Straw Hat Pirates as they search for the legendary treasure, *One Piece*. Discover the thrilling world created by Eiichiro Oda, filled with action, mystery, and endless excitement.</p>
+    </section>
+
+    <!-- Anime Cards Section -->
+    <div class="anime-section">
+        <div class="anime-card">
+            <img src="anime1.jpeg" alt="Monkey D. Luffy">
+            <div class="anime-info">
+                <h2 class="anime-title">Monkey D. Luffy</h2>
+                <p class="anime-description">The captain of the Straw Hat Pirates with the power of the Gum-Gum Fruit.</p>
+            </div>
+        </div>
+
+        <div class="anime-card">
+            <img src="anime3.jpg" alt="Roronoa Zoro">
+            <div class="anime-info">
+                <h2 class="anime-title">Roronoa Zoro</h2>
+                <p class="anime-description">The crew's swordsman, known for his three-sword style and unwavering determination.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Character Details Section -->
+    <section class="details-section">
+        <h2>About the Characters</h2>
+
+        <div class="detail-card">
+            <h3>Monkey D. Luffy</h3>
+            <p><strong>Role:</strong> Captain of the Straw Hat Pirates</p>
+            <p><strong>Abilities:</strong> Possesses the power of the <em>Gomu Gomu no Mi</em> (Gum-Gum Fruit), making his body rubber-like.</p>
+            <p><strong>Goal:</strong> To find the legendary treasure, *One Piece*, and become the Pirate King.</p>
+            <p>Luffy is known for his cheerful personality, relentless spirit, and belief in his friends. His dream fuels the journey that inspires his entire crew.</p>
+        </div>
+
+        <div class="detail-card">
+            <h3>Roronoa Zoro</h3>
+            <p><strong>Role:</strong> Swordsman of the Straw Hat Pirates</p>
+            <p><strong>Abilities:</strong> Master of the <em>Three-Sword Style</em>, capable of incredible feats of strength and endurance.</p>
+            <p><strong>Goal:</strong> To become the world's greatest swordsman.</p>
+            <p>Zoro is a loyal and disciplined fighter who values strength and honor. His ambition and dedication to his craft make him a key member of the crew.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 One Piece Fan Page. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
