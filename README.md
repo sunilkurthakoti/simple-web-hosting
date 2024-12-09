@@ -61,5 +61,8 @@ View your static website through the primary endpoint.
 
 1. **Visit the Primary Endpoint**  
    - Open the URL: `https://sunilwebstorage.z13.web.core.windows.net`
+  
+![Screenshot (43)](https://github.com/user-attachments/assets/b046c0a9-3954-46b6-8446-b61238cd09d0)
+
 
 ---
